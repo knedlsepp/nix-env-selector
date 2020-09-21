@@ -16,7 +16,7 @@ export const Notification = {
 };
 
 export const enum Command {
-  SELECT_ENV_DIALOG = "extension.selectEnv",
+  SELECT_ENV_DIALOG = "nix-env-selector.selectEnv",
   RELOAD_WINDOW = "workbench.action.reloadWindow",
 }
 

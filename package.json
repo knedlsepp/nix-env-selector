@@ -46,10 +46,12 @@
         }
       }
     },
-    "commands": [{
-      "command": "extension.selectEnv",
-      "title": "Nix-Env: Select Environment"
-    }]
+    "commands": [
+      {
+        "command": "nix-env-selector.selectEnv",
+        "title": "Nix-Env: Select Environment"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "yarn run compile",
