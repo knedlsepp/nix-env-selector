@@ -7,11 +7,13 @@ let
     pkgs.yarn
   ];
 in
-pkgs.stdenv.mkDerivation {
+pkgs.stdenv.mkDerivation rec {
   name = "vscode-env-selector";
   buildInputs = nixPackages;
   postInstall =
     ''
       yarn install
+      export PATH="$PWD/node_modules/.bin/:$PATH"
     '';
+  shellHook = postInstall;
 }
