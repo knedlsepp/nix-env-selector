@@ -76,3 +76,20 @@ You can configure the extension in `.vscode/settings.json` file (located in the 
 ## License
 
 [MIT](LICENSE)
+
+## Hacking on the extension
+
+To start a development shell, run:
+
+```bash
+nix-shell
+```
+
+To develop the extension in this shell, run:
+
+```
+code .
+```
+
+Then, inside the editor, press `F5`. This will compile and run the extension in
+a new Extension Development Host window.
